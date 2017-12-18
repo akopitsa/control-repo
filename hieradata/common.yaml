@@ -9,7 +9,7 @@ apache::mod:
   rewrite:
     package_ensure: present
   php:
-    package_ensure: present
+    package_ensure: absent
 
 #  - ssh
 #  - ntp
