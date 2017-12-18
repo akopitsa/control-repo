@@ -8,9 +8,7 @@ apache::service_enable: true
 apache::mod:
   rewrite:
     package_ensure: present
-  php:
-    package_ensure: present
-    lib: 'mod_php7.so'
+
 
 #  - ssh
 #  - ntp
