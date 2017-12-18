@@ -15,7 +15,7 @@ apache::mod::rewrite: {}
 
 
 
-#apache::vhosts:
+apache::vhosts:
 #  andrii.kopytsia.com:
 #    port: 80
 #    docroot: /var/www/andrii.kopytsia.com
@@ -27,9 +27,9 @@ apache::mod::rewrite: {}
 #      - MultiViews
 #    override: all
 
-#  vitalii.ielakov.com:
-#    port: 80
-#    docroot: /var/www/vitalii.ielakov.com
+  vitalii.ielakov.com:
+    port: 80
+    docroot: /var/www/vitalii.ielakov.com
 #    ensure: absent
 
 users:
