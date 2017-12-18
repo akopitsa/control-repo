@@ -1,5 +1,7 @@
 classes:
   - apache
+apache::mpm_module: prefork
+apache::mod::rewrite: {}
 
 #  - ssh
 #  - ntp
@@ -10,12 +12,11 @@ classes:
 #  php: {}
 #  rewrite: {}
 #  prefork: {}
-apache::mpm_module: prefork
-apache::mod::rewrite: {}
 
 
 
-apache::vhosts:
+
+#apache::vhosts:
 #  andrii.kopytsia.com:
 #    port: 80
 #    docroot: /var/www/andrii.kopytsia.com
@@ -27,9 +28,9 @@ apache::vhosts:
 #      - MultiViews
 #    override: all
 
-  vitalii.ielakov.com:
-    port: 80
-    docroot: /var/www/vitalii.ielakov.com
+#  vitalii.ielakov.com:
+#    port: 80
+#    docroot: /var/www/vitalii.ielakov.com
 #    ensure: absent
 
 users:
