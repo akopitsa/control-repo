@@ -3,7 +3,7 @@ classes:
   - apache
 apache::service_ensure: true
 apache::service_enable: true
-apache::mpm_module: prefork
+apache::mpm_module: worker
 apache::mod::rewrite: true
 apache::mod::php::package_name: mod_php
 apache::mod::rewrite:
