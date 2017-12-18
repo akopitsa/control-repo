@@ -10,9 +10,9 @@ classes:
 #  rewrite: {}
 #  prefork: {}
 apache::mpm_module: prefork
-apache::mod::php: mod_php
-apache::mod: rewrite
-
+apache::mod:
+  - php
+  - rewrite
 
 
 #apache::vhosts:
