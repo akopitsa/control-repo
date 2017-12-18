@@ -11,12 +11,12 @@ apache::mod::ssl:
 
 
 
-apache::mod:
-  rewrite:
-    package_ensure: present
+#apache::mod:
+#  rewrite:
+#    package_ensure: present#
 
-  headers:
-    package_ensure: present
+#  headers:
+#    package_ensure: present
   
 
 #  - ssh
