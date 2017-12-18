@@ -1,5 +1,6 @@
 classes:
   - apache
+  - apache::mpm_module: prefork
 #  - ssh
 #  - ntp
 #  - wordpress
@@ -9,10 +10,8 @@ classes:
 #  php: {}
 #  rewrite: {}
 #  prefork: {}
-apache::mpm_module: prefork
-apache::mod:
-  php: {}
-  rewrite: {}
+
+
 
 
 #apache::vhosts:
