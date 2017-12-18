@@ -1,11 +1,10 @@
 ---
 classes:
   - apache
-apache::params::php_version: '7'
 apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
-apache::mod_packages::php7: libapache2-mod-php7
+
 
 apache::mod:
   rewrite:
