@@ -4,8 +4,8 @@ hiera_include('classes')
 #create_resources('apache::vhost', $myvhosts)
 
 
-#$mod = hiera('apache::mod', {})
-#create_resources('apache::mod', $mod)
+$mod = hiera('apache::mod', {})
+create_resources('apache::mod', $mod)
 
 
 $node_users = hiera_hash('users')
