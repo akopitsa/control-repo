@@ -5,8 +5,8 @@ classes:
 apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
-apache::mod::ssl:
-  package_ensure: present
+apache::mod:
+  package: ssl
 
 
 
