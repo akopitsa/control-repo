@@ -15,7 +15,9 @@ apache::mod:
   rewrite: {}
   headers: {}
   ssl: {}
-  php: {}
+  php:
+    php_version: '7'
+     
     
   
 
