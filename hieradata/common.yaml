@@ -7,7 +7,7 @@ apache::service_ensure: true
 apache::service_enable: true
 apache::server_tokens: 'Prod'
 apache::mod::ssl:
-  package: ssl
+
 
 
 
