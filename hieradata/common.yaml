@@ -11,6 +11,7 @@ classes:
 #  rewrite: {}
 #  prefork: {}
 apache::mpm_module: prefork
+apache::mod::rewrite: {}
 
 
 
