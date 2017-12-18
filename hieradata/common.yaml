@@ -12,11 +12,10 @@ apache::server_tokens: 'Prod'
 
 
 apache::mod:
-  rewrite:
-    package_ensure: present#
-  headers:
-   package_ensure: present
+  rewrite: {}
+  headers: {}
   ssl: {}
+  php: {}
     
   
 
