@@ -5,6 +5,7 @@ apache::service_ensure: true
 apache::service_enable: true
 apache::mpm_module: prefork
 apache::mod::rewrite: true
+apache::mod::php::package_name: mod_php
 
 #  - ssh
 #  - ntp
