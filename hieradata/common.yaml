@@ -10,7 +10,7 @@ apache::mod:
     package_ensure: present
   php:
     package_ensure: present
-    lib: 'mod_php5.so'
+    lib: 'mod_php7.so'
 
 #  - ssh
 #  - ntp
