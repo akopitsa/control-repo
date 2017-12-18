@@ -10,6 +10,7 @@ apache::mod:
     package_ensure: present
   php:
     package_ensure: present
+    package: php7
 
 #  - ssh
 #  - ntp
