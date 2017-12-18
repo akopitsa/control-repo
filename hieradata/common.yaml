@@ -5,15 +5,18 @@ classes:
 apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
-
+apache::mod::ssl:
+  package_ensure: present
 
 
 
 apache::mod:
   rewrite:
     package_ensure: present
+
   headers:
     package_ensure: present
+  
 
 #  - ssh
 #  - ntp
