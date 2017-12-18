@@ -10,7 +10,6 @@ apache::mod:
     package_ensure: present
   php:
     package_ensure: present
-    php_version: '7.0'
 
 #  - ssh
 #  - ntp
