@@ -1,7 +1,7 @@
 classes:
   - apache
 apache::mpm_module: prefork
-apache::mod::rewrite: {}
+apache::mod::rewrite: true
 
 #  - ssh
 #  - ntp
