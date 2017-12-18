@@ -9,6 +9,7 @@ apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
 apache::server_tokens: 'Prod'
+apache::params::php_version: '5.6'
 
      
     
