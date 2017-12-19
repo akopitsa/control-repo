@@ -5,15 +5,14 @@ classes:
   - apache::mod::rewrite
   - apache::mod::ssl
   - apache::mod::headers
-  - mysql
+  - mysql::server
 apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
 apache::server_tokens: 'Prod'
 apache::default_vhost: true
 
-mysql::server:
-  root_password: 'strongpassword'
+mysql::server::root_password: 'strongpassword'
      
 
   

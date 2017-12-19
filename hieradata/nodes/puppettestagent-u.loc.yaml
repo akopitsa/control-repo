@@ -32,5 +32,4 @@ users:
       - adm
 
 apache::default_vhost: true
-mysql::server:
-  root_password: 'strongpassword2'
+mysql::server::root_password: 'strongpassword2'
