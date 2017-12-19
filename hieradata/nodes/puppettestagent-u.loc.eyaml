@@ -34,14 +34,14 @@ users:
 apache::default_vhost: true
 mysql::server::root_password: >
     ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEw
-    DQYJKoZIhvcNAQEBBQAEggEAEL9laj2u4lTD8WkzOx6nDeWtpM8NBSXIadd9
-    qDJn1BABI2huPgz2OtQse/DHdUUZpv3vtk/GWIVp7qDPnSaRxli2J6fAompf
-    xpvyKwPr0kdzCjxOULqo0JcwbhDid03mmbycD+jH1mO6uwFMQRr3YnFhILgK
-    gI0zqXOgNe4sijryDxCNwMD2AsCxjfkEfhOjBhPd3IqyIYtNalWfuB2KLKlS
-    V3p5p6kL/YHSQ+ve7PqeuTzOnbnMsdWBHGK+q8Hxt3ezqwTqmxlYtdA5zENe
-    Rsrz6ceEJrmsS0Pdcr+PFUWAMjUkwGG5NOO5fN5B7ke1hRZ2wKhgX99t10cp
-    MPPbMjA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBDU6D85shzUPemqlGPc
-    LgI3gBAccb8JHIxc4CsFedhcJ1ms]
+    DQYJKoZIhvcNAQEBBQAEggEAfmzbQ7yKniI+luwy3L4xk8PeqKaGfepnSzre
+    aFTH4D0RNMG4W76xORd6GdppW77x1InQRQNoX+q+q8J1c/yL7priU93fI65A
+    cPNfs9XbrSxtch9yl3NLL25Lpkl1Nm+68svL1FHtGnBywyUJJV0TlSmsGEfO
+    qukXay61bpPI2FNQooR8eRdiUX1rBzfQXnpNBS/T+e6Buoh6ReFajDK0u+N/
+    h+KKFiS7pMHf+Te6TJbtng2Ypknp0Dbt0Zbpp3jmzf70w9iapESchTq+VOnZ
+    yqeitTDSUh3634Orp+hrx6NY4GC0/QJHxr4RJLdin0M5Atr+wSG1pGih3UCO
+    kDdlaDA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBpzKJCunbgum6H0v3e
+    VbEQgBDHqAC/oaJFOYo2q7Rqgewb]
 
 mysql::server::databases:
   somedb:
