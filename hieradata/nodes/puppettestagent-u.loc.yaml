@@ -29,4 +29,6 @@ users:
     managehome: true
     groups:
       - adm
+
+apache::default_vhost: false
    
