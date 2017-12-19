@@ -32,7 +32,16 @@ users:
       - adm
 
 apache::default_vhost: true
-mysql::server::root_password: 'ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAwtfbIRdJHLmPj64TfUDGdnZoylTJWaKJH0q1NEUPBFeoBEQKSfRd2ffpHf8oZNaa4TNf2eoHxkg0M/II2BMbWN/eiKoL1n97HO1FfwDR5YO7Uhx4JK+rcdZTRMu0KqqZz+9Kki+1Q2BtiIr7Og9wsJx7L8K4WepEdeobwim3xun0errvbnWq+JOOpQZfCg0YaLF6C4CUJ4ddMUQvpn4nkFi4Wt3K3kXNuaejWpqdtaAfaFDonPmSnXvAt+hwW95snR9hPKqG6Vla06jihAaVH5cyV2/2mLxOyqs5WAbpjXfQaHkYH2rpHFiyfvERWBkcRWTsq0RDTzZn8hcznrlseDA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBDxC0D3J/zsWmLKuLsYjGjbgBAdwkN2vHOv/cbq8Tbr2G8E]'
+mysql::server::root_password: >
+    ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEw
+    DQYJKoZIhvcNAQEBBQAEggEAEL9laj2u4lTD8WkzOx6nDeWtpM8NBSXIadd9
+    qDJn1BABI2huPgz2OtQse/DHdUUZpv3vtk/GWIVp7qDPnSaRxli2J6fAompf
+    xpvyKwPr0kdzCjxOULqo0JcwbhDid03mmbycD+jH1mO6uwFMQRr3YnFhILgK
+    gI0zqXOgNe4sijryDxCNwMD2AsCxjfkEfhOjBhPd3IqyIYtNalWfuB2KLKlS
+    V3p5p6kL/YHSQ+ve7PqeuTzOnbnMsdWBHGK+q8Hxt3ezqwTqmxlYtdA5zENe
+    Rsrz6ceEJrmsS0Pdcr+PFUWAMjUkwGG5NOO5fN5B7ke1hRZ2wKhgX99t10cp
+    MPPbMjA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBDU6D85shzUPemqlGPc
+    LgI3gBAccb8JHIxc4CsFedhcJ1ms]
 
 mysql::server::databases:
   somedb:
