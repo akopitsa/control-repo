@@ -12,7 +12,7 @@ users:
       - adm
 #      - vboxsf
   viltalii_ielakov:
-    ensure: present
+    ensure: absent
     home: /home/viltalii_ielakov
     shell: /bin/bash
 #    uid: 10002
