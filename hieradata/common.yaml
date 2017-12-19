@@ -5,7 +5,7 @@ classes:
   - apache::mod::rewrite
   - apache::mod::ssl
   - apache::mod::headers
-  - mysql::server
+  - mysql
 apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
