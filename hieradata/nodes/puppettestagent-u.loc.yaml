@@ -1,11 +1,7 @@
 ---
 classes:
   - wordpress
-  - mysql
-mysql::server:
-  proba:
-    ensure: present
-    charset: 'utf8'
+
 
 users:
   andrii_kopytsia:
