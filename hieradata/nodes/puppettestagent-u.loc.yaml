@@ -1,8 +1,5 @@
 ---
-classes:
-  - wordpress
-
-
+#classes:
 users:
   andrii_kopytsia:
     ensure: absent
@@ -35,3 +32,5 @@ users:
       - adm
 
 apache::default_vhost: true
+mysql::server:
+  root_password: 'strongpassword2'
