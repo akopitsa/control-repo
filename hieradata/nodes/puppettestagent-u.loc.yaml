@@ -33,7 +33,13 @@ users:
 
 apache::default_vhost: true
 mysql::server::root_password: 'strongpassword2'
+
 mysql::server::databases:
   somedb:
     ensure: present
     charset: 'utf8'
+
+mysql::server::users:
+  someuser@localhost:
+    ensure: present
+    password_hash: '*E62D3F829F44A91CC231C76347712772B3B9DABC'
