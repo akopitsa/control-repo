@@ -9,7 +9,7 @@ apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
 apache::server_tokens: 'Prod'
-apache::default_vhost: false
+apache::default_vhost: true
 
      
 
