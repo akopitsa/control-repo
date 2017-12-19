@@ -1,7 +1,7 @@
 ---
 users:
   andrii_kopytsia:
-    ensure: present
+    ensure: absent
     home: /home/andrii_kopytsia
     shell: /bin/bash
 #    uid: 10001
