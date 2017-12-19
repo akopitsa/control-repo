@@ -1841,4 +1841,48 @@ ssential drivers[   80.550616] md: multipath personality registered for level -4
 [   82.689173] raid6: avx2x4   gen() 23811 MB/s
 [   82.872559] raid6: using algorithm avx2x4 gen() 23811 MB/s
 [   83.060692] raid6: using avx2x2 recovery algorithm
-[   83.215060] xor: automatically using best check
+[   83.215060] xor: automatically using best checksumming function:
+[   83.397168]    avx       : 21465.000 MB/sec
+[   83.480967] async_tx: api initialized (async)
+[   83.533366] md: raid6 personality registered for level 6
+[   83.725926] md: raid5 personality registered for level 5
+[   83.914088] md: raid4 personality registered for level 4
+[   84.124003] md: raid10 personality registered for level 10
+done.
+Begin: Running /scripts/i[   84.289438] Btrfs loaded
+nit-premount ... done.
+Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
+Begin: Running /scripts/local-premount ... Scanning for Btrfs filesystems
+done.
+Warning: fsck no[   84.442308] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+t present, so skipping root file system
+done.
+Begin: Running /scripts/local-bottom ... done.
+Begin: Running /scripts/init-bottom ... done.
+[   84.743804] systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+[   85.335786] systemd[1]: Detected virtualization oracle.
+[   85.453981] systemd[1]: Detected architecture x86-64.
+
+Welcome to [1mUbuntu 16.04.3 LTS[0m!
+
+[ 853284] yste[1 S htne  <ppteagt-2>
+
+[ 86952]ysmd1]: istengn everl ck. [[0;32m  OK  [0m] Listening on udev Kernel Socket.
+[   874554syem1]Listenin on evnitlomtili Nedip
+[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[  88.35763]ysmd]:isnin oSylog Scket.
+[[0;32m  OK  [0m] Listening on Syslog Socket.
+[   .804 stemd[1: ard rigerelvcof dat fr twkdNS
+
+[[0;32m  OK  [0m] Started Trigger resolvconf update for networkd DNS.
+[   89.761142] system[1]: Litengn oualoct delo).
+[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[   90453]ysmd]:Listenin on VMmeda dmosoet
+[[0;32m  OK  [0m] Listening on LVM2 metadata daemon socket.
+[ 91103]ysmd]:tartd Forward Pawod qutso llirto Wch
+[[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
+[   92.374439] sysmd]:eaedart ncryted Vome
+[[0;32m  OK  [0m] Reached target Encrypted Volumes.
+[ 93706]ysemd[1] Cead icSyemli.
+[[0;32m  OK  [0m] Created slice System Slice.
+[   3.
