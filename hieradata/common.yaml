@@ -15,7 +15,10 @@ apache::default_vhost: true
 mysql::server::create_root_user: true
 mysql::server::root_password: 'strongpassword'
 mysql::server::remove_default_accounts: true     
-
+mysql::server::databases:
+  somedb:
+    ensure: 'present'
+    charset: 'utf8'
   
 
 #  - ssh
