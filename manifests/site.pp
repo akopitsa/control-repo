@@ -2,8 +2,7 @@ hiera_include('classes')
 
 #$myvhosts = hiera('apache::vhosts', {})
 #create_resources('apache::vhost', $myvhosts)
-$mserver = hiera_hash('mysql::server::databases', {})
-create_resources('mysql::server::databases', $mserver)
+
 
 
 #$mod = hiera('apache::mod', {})
