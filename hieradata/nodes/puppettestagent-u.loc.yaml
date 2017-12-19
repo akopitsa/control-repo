@@ -2,7 +2,7 @@
 classes:
   - wordpress
 
-mysql::server::databases:
+mysql::server:
   proba:
     ensure: present
     charset: 'utf8'
