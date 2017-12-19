@@ -1,4 +1,7 @@
 ---
+classes:
+  - wordpress
+
 users:
   andrii_kopytsia:
     ensure: absent
