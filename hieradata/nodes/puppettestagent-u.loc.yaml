@@ -1,11 +1,11 @@
 ---
 classes:
   - wordpress
-  - mysql::server
-wordpress::conf::db_name: 'proba'
-wordpress::conf::db_user: 'wp-proba'
-wordpress::conf::db_user_password: 'proba-pass'
-wordpress::conf::db_host: 'localhost'
+
+mysql::server::databases:
+  proba:
+    ensure: present
+    charset: 'utf8'
 
 users:
   andrii_kopytsia:
