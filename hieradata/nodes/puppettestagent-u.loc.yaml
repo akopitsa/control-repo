@@ -32,7 +32,7 @@ users:
       - adm
 
 apache::default_vhost: true
-mysql::server::root_password: 'ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEA0qu3MreyEIUbSGd+pLWai7zlHnkRfZpCQ6HzyjwTSCp3hnphkXeZo5V4iUjKDFp2dZeCjx7olXQcvlPXwlbWVzt3WhcqnG5QEwqtLoxyVIEqX1ys80fT8XDh8OwSfXlavIsWSsV3CqNNudeOevcUrBAx412yKE0OaXoQlqXCU584rYmCk4lHHykClxhoYpqYZ5fqb2C87Jk9iiTVOw4fLkCRcF6+Syuih+gUTT1Mp0yA/+re2/5l8maihzznPGcqTZgd/N9gAfE/sIAnnbMywso3ku4fOaiIgYrVYtMtzK7zWdpVm55CPw7aKA1g+55EgcgCKdkXPEQjOG1ONPz86jA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBCz4eIyWgqJpyVsdss6xHyogBBRNbGZq1NXpgFsxcH3Qn0i]'
+mysql::server::root_password: '123321'
 
 mysql::server::databases:
   somedb:
