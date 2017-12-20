@@ -33,6 +33,7 @@ users:
 
 apache::default_vhost: true
 
+
 mysql::server::databases:
   somedb:
     ensure: present
