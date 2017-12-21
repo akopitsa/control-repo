@@ -33,7 +33,16 @@ users:
 
 apache::default_vhost: true
 
-
+mysql::server::root_password: >
+    ENC[PKCS7,MIIBiQYJKoZIhvcNAQcDoIIBejCCAXYCAQAxggEhMIIBHQIBADAFMAACAQEw
+    DQYJKoZIhvcNAQEBBQAEggEAYWxu3DPU4IH+o0uNCcuLElaql4KnMtOg/ZMT
+    kkHJEw8W9YIoAGZvQOtrMEwFyBPiynhpNq4kSSwRdAgpniy7QJz4Su8yFp6m
+    YSbKkcQ4eDbACf5L0QIREpD9QjOX+9551KlQgu3UauTLno5wRXBl3GRNnCUK
+    X5a8s0XJ0YWU5HaumnqQorjyCCsHpVFyVRocbr4FNBrn3jkgVkoAdjeUQLph
+    3Gj6sUwxZS2jZTd/viUKje7474TaT4w0Y0CtbHFsps+bAZg4Kk9cmdB172oh
+    4Wr5IwPbSlXeWtaDvKqGwjFeJascf0nOJxM25cwX2+3gKIxLu1XFCNcBjMHm
+    slxgyzBMBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBCaF75npdTYhg/HS+yx
+    O12tgCBRtmNp1N9OYwZhD+AjIJdiB2EgUTgo7cni8ov3rYdmFA==]
 mysql::server::databases:
   somedb:
     ensure: present
