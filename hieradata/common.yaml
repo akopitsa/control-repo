@@ -42,7 +42,7 @@ maldet::daily_scan: true
 maldet::mirror_url: https://www.rfxn.com/downloads
 maldet::config: {}
 maldet::monitor_paths: 
-  - '/home/'
+  - /media/data/www/
 maldet::ignore_paths:
   - /usr/local/maldetect
   - /usr/local/sbin/maldet
