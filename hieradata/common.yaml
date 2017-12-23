@@ -7,6 +7,7 @@ classes:
   - apache::mod::headers
   - mysql::server
   - ntp
+  - maldet
 apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
@@ -31,6 +32,11 @@ ntp::restrict:
   - restrict 127.0.0.1
   - restrict -6 ::1
 
+maldet::install:
+maldet::ensure: present
+maldet::service_ensure: rinning
+maldet::daily_scan: true
+maldet::monitor_paths: '/var/www/'
 
 #  - ssh
 #  - ntp

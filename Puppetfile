@@ -6,6 +6,7 @@ mod 'puppetlabs-apt','4.4.1'
 mod 'puppetlabs-translate', '1.1.0'
 mod 'puppet-staging', '3.0.0'
 mod 'puppetlabs-mysql', '5.1.0'
+mod 'nexcess-maldet', '1.3.1'
 #mod 'puppet-selinux', '1.5.0'
 #mod 'ntp',
 #  git: 'https://github.com/akopitsa/mypuppetntpmodule.git'
