@@ -36,7 +36,7 @@ ntp::restrict:
 maldet::install:
 maldet::version: '1.6.2'
 maldet::ensure: present
-maldet::service_ensure: running
+#maldet::service_ensure: running
 maldet::daily_scan: true
 maldet::monitor_paths: 
   - '/home/'
