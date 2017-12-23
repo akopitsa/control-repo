@@ -47,9 +47,9 @@ maldet::ignore_paths:
   - /usr/local/maldetect
   - /usr/local/sbin/maldet
 maldet::new_config:
-  email_alert: false
+  email_alert: true
   email_addr:
-    - you@domain.com
+    - andrey.koptisa@gmail.com
   email_ignore_clean: true
   autoupdate_signatures: true
   autoupdate_version: false
