@@ -1,5 +1,4 @@
 #--- 
-#      - vboxsf
 #classes:
 #  - ntp
 #ntp::restrict:

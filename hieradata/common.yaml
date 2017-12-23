@@ -6,6 +6,7 @@ classes:
   - apache::mod::ssl
   - apache::mod::headers
   - mysql::server
+  - ntp
 apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
@@ -16,7 +17,20 @@ mysql::server::create_root_user: true
 mysql::server::root_password: 'strongpassword'
 mysql::server::remove_default_accounts: true     
 
-  
+ntp::service_ensure: running
+ntp::service_enable: true
+ntp::servers:
+  - 0.ua.pool.ntp.org
+  - 1.ua.pool.ntp.org
+  - 2.ua.pool.ntp.org
+  - 3.ua.pool.ntp.org
+  - 4.ua.pool.ntp.org
+ntp::restrict:
+  - restrict default kod nomodify notrap nopeer noquery
+  - restrict -6 default kod nomodify notrap nopeer noquery
+  - restrict 127.0.0.1
+  - restrict -6 ::1
+
 
 #  - ssh
 #  - ntp
