@@ -36,7 +36,8 @@ maldet::install:
 maldet::ensure: present
 maldet::service_ensure: rinning
 maldet::daily_scan: true
-maldet::monitor_paths: '/var/www/'
+maldet::monitor_paths: 
+  - '/var/www/'
 
 #  - ssh
 #  - ntp
