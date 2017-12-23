@@ -39,7 +39,7 @@ maldet::ensure: present
 maldet::service_ensure: running
 maldet::daily_scan: true
 maldet::monitor_paths: 
-  - '/var/www/'
+  - '/home/'
 
 #  - ssh
 #  - ntp
