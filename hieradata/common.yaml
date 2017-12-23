@@ -52,7 +52,7 @@ maldet::new_config:
     - andrey.koptisa@gmail.com
   email_ignore_clean: true
   autoupdate_signatures: true
-  autoupdate_version: false
+  autoupdate_version: true
   autoupdate_version_hashed: true
   import_config_url: ''
   import_config_expire: 43200
