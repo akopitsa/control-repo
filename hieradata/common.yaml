@@ -41,7 +41,7 @@ ntp::restrict:
 wget::fetch:
   'http://www.rfxn.com/downloads/maldetect-current.tar.gz':
     destination: /tmp/
-    timeout: 0
+    timeout: 15
     verbose: false
 ######## WGET ###########
 
