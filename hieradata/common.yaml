@@ -7,6 +7,7 @@ classes:
   - apache::mod::headers
   - mysql::server
   - ntp
+  - clamav
   - maldet
 apache::mpm_module: prefork
 apache::service_ensure: true
@@ -96,8 +97,19 @@ maldet::new_config:
   string_length_scan: false
   string_length: 150000
 maldet::cron_config: {}
-maldet::cleanup_old_install: true  
+maldet::cleanup_old_install: true
+########### MALDET ###########
 
+############## CLAMAV ########
+clamav::manage_clamd: true
+clamav::manage_freshclam: true
+clamav::clamd_service_ensure: running
+freshclam_service_ensure: running
+clamav::freshclam_options:
+  DatabaseMirror:
+  - http://www.rfxn.com/downloads/rfxn.ndb
+  - http://www.rfxn.com/downloads/rfxn.hdb
+############## CLAMAV ########
 #  - ssh
 #  - ntp
 #  - wordpress
