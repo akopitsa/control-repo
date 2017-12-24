@@ -38,7 +38,7 @@ ntp::restrict:
 ######### NTP ####
 
 wget::fetch:
-  http://www.rfxn.com/downloads/maldetect-current.tar.gz:
+  'http://www.rfxn.com/downloads/maldetect-current.tar.gz':
     destination: /tmp/
     timeout: 0
     verbose: false
