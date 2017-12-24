@@ -8,6 +8,7 @@ mod 'puppet-staging', '3.0.0'
 mod 'puppetlabs-mysql', '5.1.0'
 mod 'nexcess-maldet', '1.3.1'
 mod 'edestecd-clamav', '1.0.0'
+mod 'rmueller-cron', '1.0.0'
 #mod 'puppet-selinux', '1.5.0'
 #mod 'ntp',
 #  git: 'https://github.com/akopitsa/mypuppetntpmodule.git'

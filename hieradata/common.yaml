@@ -9,6 +9,8 @@ classes:
   - ntp
   - clamav
   - maldet
+  - cron
+########## APACHE ###########  
 apache::mpm_module: prefork
 apache::service_ensure: true
 apache::service_enable: true
@@ -112,6 +114,21 @@ clamav::freshclam_options:
   - https://www.rfxn.com/downloads/rfxn.ndb
   - https://www.rfxn.com/downloads/rfxn.hdb
 ############## CLAMAV ########
+
+############ CRON #######
+cron::job: 
+  maldet:
+    command: 'maldet -a; maldet -u'
+    minute: 0
+    hour: 0
+    date: '*'
+    weekday: '*'
+    user: root
+    environment:
+      - 'MAILTO=root'
+      - 'PATH="/usr/bin:/bin:/usr/sbin/"'
+    description: 'maldet scan'
+############ CRON #######
 #  - ssh
 #  - ntp
 #  - wordpress
