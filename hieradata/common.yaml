@@ -109,8 +109,8 @@ clamav::freshclam_options:
   DatabaseMirror:
   - db.local.clamav.net
   - database.clamav.net
-  - http://www.rfxn.com/downloads/rfxn.ndb
-  - http://www.rfxn.com/downloads/rfxn.hdb
+  - https://www.rfxn.com/downloads/rfxn.ndb
+  - https://www.rfxn.com/downloads/rfxn.hdb
 ############## CLAMAV ########
 #  - ssh
 #  - ntp
