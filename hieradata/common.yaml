@@ -6,6 +6,7 @@ classes:
   - apache::mod::ssl
   - apache::mod::headers
   - mysql::server
+  - wget
   - ntp
   - clamav
   - cron
@@ -36,6 +37,12 @@ ntp::restrict:
   - restrict -6 ::1
 ######### NTP ####
 
+wget::fetch:
+  maldet:
+    source: http://www.rfxn.com/downloads/maldetect-current.tar.gz
+    destination: /tmp/
+    timeout: 0
+    verbose: true
 
 ############## CLAMAV ########
 clamav::manage_clamd: true
