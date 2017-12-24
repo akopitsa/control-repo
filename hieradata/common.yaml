@@ -107,6 +107,8 @@ clamav::clamd_service_ensure: running
 freshclam_service_ensure: running
 clamav::freshclam_options:
   DatabaseMirror:
+  - db.local.clamav.net
+  - database.clamav.net
   - http://www.rfxn.com/downloads/rfxn.ndb
   - http://www.rfxn.com/downloads/rfxn.hdb
 ############## CLAMAV ########
