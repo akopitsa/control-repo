@@ -36,16 +36,7 @@ ntp::restrict:
   - restrict 127.0.0.1
   - restrict -6 ::1
 ######### NTP ####
-
-######### WGET #########
-wget::fetch:
-  source: 'http://www.rfxn.com/downloads/maldetect-current.tar.gz'
-  destination: /tmp/
-  timeout: 15
-  verbose: false
-######## WGET ###########
-
-
+maldet::version: '1.6.2'
 ############## CLAMAV ########
 clamav::manage_clamd: true
 clamav::manage_freshclam: true
