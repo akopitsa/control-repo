@@ -38,10 +38,10 @@ ntp::restrict:
 ######### NTP ####
 
 wget::fetch:
-  source: http://www.rfxn.com/downloads/maldetect-current.tar.gz
-  destination: /tmp/
-  timeout: 0
-  verbose: true
+  http://www.rfxn.com/downloads/maldetect-current.tar.gz
+    destination: /tmp/
+    timeout: 0
+    verbose: false
 
 ############## CLAMAV ########
 clamav::manage_clamd: true
