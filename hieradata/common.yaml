@@ -19,8 +19,9 @@ apache::default_vhost: true
 
 mysql::server::create_root_user: true
 mysql::server::root_password: 'strongpassword'
-mysql::server::remove_default_accounts: true     
+mysql::server::remove_default_accounts: true
 
+####### NTP ##########
 ntp::service_ensure: running
 ntp::service_enable: true
 ntp::servers:
@@ -34,13 +35,15 @@ ntp::restrict:
   - restrict -6 default kod nomodify notrap nopeer noquery
   - restrict 127.0.0.1
   - restrict -6 ::1
+######### NTP ####
 
+####### WGET ####
 wget::fetch:
-  maldet:
-    source: http://www.rfxn.com/downloads/maldetect-current.tar.gz
+  http://www.rfxn.com/downloads/maldetect-current.tar.gz
     destination: /tmp/
     timeout: 0
     verbose: true
+######### WGET ############
 
 ############## CLAMAV ########
 clamav::manage_clamd: true
