@@ -8,7 +8,6 @@ classes:
   - mysql::server
   - ntp
   - clamav
-#  - maldet
   - cron
 ########## APACHE ###########  
 apache::mpm_module: prefork
