@@ -39,7 +39,7 @@ ntp::restrict:
 #maldet::install:
 maldet::version: '1.6.2'
 maldet::package_name: ''
-maldet::ensure: present
+maldet::ensure: absent
 maldet::service_ensure: running
 maldet::daily_scan: true
 maldet::mirror_url: https://www.rfxn.com/downloads
