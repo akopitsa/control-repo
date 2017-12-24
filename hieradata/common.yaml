@@ -37,7 +37,7 @@ ntp::restrict:
   - restrict -6 ::1
 ######### NTP ####
 maldet::version: '1.6.2'
-maldet::email_alert: true
+maldet::email_alert: false
 ############## CLAMAV ########
 clamav::manage_clamd: true
 clamav::manage_freshclam: true
