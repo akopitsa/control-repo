@@ -7,6 +7,7 @@ classes:
   - apache::mod::headers
   - mysql::server
   - ntp
+  - wget
   - clamav
   - cron
 ########## APACHE ###########  
@@ -34,6 +35,10 @@ ntp::restrict:
   - restrict 127.0.0.1
   - restrict -6 ::1
 
+wget::fetch::source: 'http://www.rfxn.com/downloads/maldetect-current.tar.gz'
+wget::fetch::destination: '/tmp/'
+wget::fetch::timeout: 0
+wget::fetch::verbose: true
 
 ############## CLAMAV ########
 clamav::manage_clamd: true
