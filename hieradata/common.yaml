@@ -39,10 +39,10 @@ ntp::restrict:
 maldet::version: '1.6.2'
 maldet::email_alert: true
 ############## CLAMAV ########
-clamav::manage_clamd: true
-clamav::manage_freshclam: true
-clamav::clamd_service_ensure: running
-freshclam_service_ensure: running
+clamav::manage_clamd: false
+clamav::manage_freshclam: false
+clamav::clamd_service_ensure: stopping
+freshclam_service_ensure: stopping
 clamav::freshclam_options:
   DatabaseMirror:
   - db.local.clamav.net
