@@ -39,16 +39,7 @@ ntp::restrict:
 maldet::version: '1.6.2'
 maldet::email_alert: true
 ############## CLAMAV ########
-clamav::manage_clamd: false
-clamav::manage_freshclam: false
-clamav::clamd_service_ensure: stopped
-freshclam_service_ensure: stopped
-clamav::freshclam_options:
-  DatabaseMirror:
-  - db.local.clamav.net
-  - database.clamav.net
-  - https://www.rfxn.com/downloads/rfxn.ndb
-  - https://www.rfxn.com/downloads/rfxn.hdb
+
 ############## CLAMAV ########
 
 ############ CRON #######
