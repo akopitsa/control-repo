@@ -39,7 +39,9 @@ ntp::restrict:
 maldet::version: '1.6.2'
 maldet::email_alert: true
 ############## CLAMAV ########
-
+clamav::databasecustom:
+  - http://www.rfxn.com/downloads/rfxn.ndb
+  - http://www.rfxn.com/downloads/rfxn.hdb
 ############## CLAMAV ########
 
 ############ CRON #######
