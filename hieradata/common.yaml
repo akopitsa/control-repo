@@ -6,6 +6,7 @@ classes:
   - apache::mod::ssl
   - apache::mod::headers
   - mysql::server
+  - clamav
   - maldet
   - ntp
   - cron

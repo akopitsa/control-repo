@@ -11,6 +11,8 @@ mod 'puppetlabs-mysql', '5.1.0'
 mod 'rmueller-cron', '1.0.0'
 mod 'maldet',
   git: 'https://github.com/akopitsa/maldet.git'
+mod 'clamav',
+  git: 'https://github.com/akopitsa/clamav.git'
 #mod 'puppet-selinux', '1.5.0'
 #mod 'ntp',
 #  git: 'https://github.com/akopitsa/mypuppetntpmodule.git'
